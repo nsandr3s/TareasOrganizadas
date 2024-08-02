@@ -1,0 +1,169 @@
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal de la página */
+.contenedor {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el título principal */
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Contenedor para los campos de entrada */
+.contenedor-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos para los campos de entrada */
+#nueva-tarea, #fecha-inicio, #usuario-asignado {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el botón de agregar tarea */
+#agregar-tarea {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo del botón al pasar el ratón sobre él */
+#agregar-tarea:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el contenido principal */
+main {
+    display: flex;
+    gap: 20px;
+}
+
+/* Contenedor para las tareas */
+.contenedor-tareas {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+}
+
+/* Estilos para cada columna de tareas */
+.columna-tarea {
+    flex: 1;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para los títulos de las columnas */
+.columna-tarea h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Estilos para la lista de tareas */
+.lista-tareas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos para cada elemento de la lista de tareas */
+.lista-tareas li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las tareas completadas */
+.lista-tareas li.completed {
+    background-color: #e6ffe6;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* Estilos para las tareas en proceso */
+.lista-tareas li.in-progress {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Estilos para los botones dentro de cada tarea */
+.lista-tareas li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Estilos para el botón de eliminar tarea */
+.lista-tareas li button.remove {
+    color: #dc3545;
+}
+
+/* Estilos para el botón de completar tarea */
+.lista-tareas li button.complete {
+    color: #28a745;
+}
+
+/* Estilo del botón de eliminar al pasar el ratón sobre él */
+button.remove:hover {
+    color: #c82333;
+}
+
+/* Estilo del botón de completar al pasar el ratón sobre él */
+button.complete:hover {
+    color: #218838;
+}
+
+/* Estilos para la información de cada tarea */
+.info-tarea {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilos para la fecha en la información de la tarea */
+.info-tarea .fecha {
+    color: #333;
+}

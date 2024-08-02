@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aplicación de lista de tareas avanzada para agregar, gestionar y organizar tareas con fechas de inicio y usuarios asignados.">
+    <meta name="author" content="nsandr3s">
+    <title>Lista de Tareas Avanzada</title>
+    <!-- Archivo CSS-->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- Contenedor principal para la estructura de la página -->
+    <div class="contenedor">
+        <header>
+            <h1>Lista de Tareas</h1>
+            <br>
+            <div class="contenedor-inputs">
+                <!-- Campo de entrada para escribir una nueva tarea -->
+                <input type="text" id="nueva-tarea" placeholder="Añadir nueva tarea...">
+                <!-- Campo de entrada para seleccionar la fecha de inicio de la tarea -->
+                <input type="date" id="fecha-inicio" placeholder="Fecha de inicio">
+                <!-- Campo de entrada para especificar el usuario asignado a la tarea -->
+                <input type="text" id="usuario-asignado" placeholder="Usuario asignado">
+                <!-- Botón para agregar la tarea a la lista -->
+                <button id="agregar-tarea">Añadir</button>
+            </div>
+        </header>
+        <!-- Contenido principal que organiza las tareas en diferentes columnas -->
+        <main>
+            <div class="contenedor-tareas">
+                <!-- Columna para mostrar las tareas pendientes -->
+                <div class="columna-tarea" id="pendientes">
+                    <h2>Pendientes</h2>
+                    <!-- Lista de tareas que están en estado pendiente -->
+                    <ul id="lista-pendientes" class="lista-tareas"></ul>
+                </div>
+                <!-- Columna para mostrar las tareas en proceso -->
+                <div class="columna-tarea" id="en-proceso">
+                    <h2>En Proceso</h2>
+                    <!-- Lista de tareas que están en proceso -->
+                    <ul id="lista-en-proceso" class="lista-tareas"></ul>
+                </div>
+                <!-- Columna para mostrar las tareas completadas -->
+                <div class="columna-tarea" id="completadas">
+                    <h2>Completadas</h2>
+                    <!-- Lista de tareas que han sido completadas -->
+                    <ul id="lista-completadas" class="lista-tareas"></ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
